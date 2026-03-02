@@ -1,0 +1,181 @@
+h1 {
+  position: relative;
+  padding: 0.3em 0 0.2em 1em;
+  border-bottom: 3px solid #2589d0;
+  color: #333333;
+  font-size: xx-large;
+}
+
+h1::before {
+  position: absolute;
+  top: 0;
+  left: 0.3em;
+  transform: rotate(55deg);
+  height: 11px;
+  width: 12px;
+  background: #2589d0;
+  content: "";
+}
+
+h1::after {
+  position: absolute;
+  transform: rotate(15deg);
+  top: 0.6em;
+  left: 0;
+  height: 8px;
+  width: 8px;
+  background: #2589d0;
+  content: "";
+}
+
+h2 {
+  font-size: x-large;
+  position: relative;
+  padding: 0.5em 1.2em;
+  color: #333333;
+}
+
+h2::before,
+h2::after {
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #2589d0;
+  content: "";
+}
+
+h2::before {
+  top: calc(50% - 3px);
+  left: 0;
+}
+
+h2::after {
+  top: calc(50% + 3px);
+  left: 5px;
+}
+
+h3 {
+  padding: 0.5em 0.7em;
+  border-left: 5px solid #2589d0;
+  color: #333333;
+  font-size: large;
+}
+
+p {
+  color: #3f3e3e;
+  font-size: medium;
+}
+
+h4 {
+  border-bottom: 3px solid #f2f2f2;
+}
+
+/* ── コードブロック ── */
+pre {
+  background-color: #f3f3f3;
+  padding: 16px;
+  border-radius: 4px;
+  overflow: auto;
+  line-height: 1.45;
+}
+
+code {
+  background-color: #f3f3f3;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 85%;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ── シンタックスハイライト（ライトテーマ）── */
+/* highlight.css は .vscode-light クラス前提のため、ブラウザ用に上書き */
+.hljs-function,
+.hljs-params,
+.hljs-class {
+  color: inherit;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-variable {
+  color: #008000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-tag {
+  color: #00f;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #007acc;
+}
+
+.hljs-string,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type {
+  color: #a31515;
+}
+
+.hljs-subst,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta,
+.hljs-meta-keyword {
+  color: #2b91af;
+}
+
+.hljs-title,
+.hljs-doctag {
+  color: #808080;
+}
+
+.hljs-attr {
+  color: #f00;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #00b0e8;
+}
+
+.hljs-number {
+  color: #008000;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: small;
+}
+
+table tr:nth-child(2n) {
+  background: #ebf5ff;
+}
+
+table th {
+  padding: 10px;
+  background: #a8d2ff;
+  border-right: solid 1px #778ca3;
+}
+
+table td {
+  padding: 10px;
+  border-right: solid 1px #778ca3;
+}

@@ -1,2 +1,2 @@
 # markdown_css
-使用しているmarkdown
+使用しているmarkdownのスタイルを保存します。
